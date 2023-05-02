@@ -1,0 +1,117 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="order.php" method="POST">
+
+        <label>NAME</label>
+        <input type="number" name="name"><br><br><br>
+
+        <label>MOB-NUMBER</label>
+        <input type=" text " name="mobile"><br><br><br>
+
+        <label>EMAIL</label>
+        <input type=" text " name="email"><br><br><br>
+        <p>ADRESS</p>
+        <textarea name="address" cols="30" rows="10"></textarea><br><br><br>
+
+        <label>AMOUNT</label>
+        <input type=" text " name="amount"><br><br><br>
+
+        <input type="submit" name="submit">
+</body>
+
+</html> -->
+<!-- <?php
+$host="localhost";
+$username="root";
+$password="";
+$dbname="hii";
+$con=mysqli_connect($host,$username,$password,$dbname);
+if($con)
+{
+    echo "success";
+}
+else
+{
+    echo "fail";
+}
+
+?> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Example</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+</head>
+<style>
+    .container {
+        max-width: 600px;
+    }
+    
+    .form-label {
+        font-weight: bold;
+    }
+    
+    .btn-primary {
+        background-color: #f0ad4e;
+        border-color: #f0ad4e;
+    }
+    
+    .btn-primary:hover {
+        background-color: #ec971f;
+        border-color: #ec971f;
+    }
+</style>
+
+<body>
+
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mob-number" class="form-label">Mobile Number</label>
+                        <input type="number" class="form-control" name="mobile" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Address</label>
+                        <textarea class="form-control" name="address" rows="3" required></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="amount" class="form-label">Amount</label>
+                        <input type="number" class="form-control" name="amount" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
